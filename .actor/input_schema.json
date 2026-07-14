@@ -1,0 +1,58 @@
+{
+  "title": "PulseLeads — Substack Outreach Lead Generator — Input",
+  "type": "object",
+  "schemaVersion": 1,
+  "properties": {
+    "keywords": {
+      "title": "Topics / keywords",
+      "type": "array",
+      "description": "What niche do you want writers for? e.g. AI, finance, health. The actor searches for relevant Substack publications and pulls their authors. Don't know any Substack URLs? Just fill this in. (Leave empty only if you're pasting URLs below.)",
+      "editor": "stringList",
+      "prefill": ["AI", "finance"]
+    },
+    "newsletterUrls": {
+      "title": "Substack publication URLs (optional)",
+      "type": "array",
+      "description": "Already know the Substacks you want? Paste their URLs to skip discovery (custom domains supported). Leave empty to discover by keyword instead.",
+      "editor": "stringList",
+      "prefill": ["https://lenny.substack.com"]
+    },
+    "maxAuthors": {
+      "title": "Max authors per source",
+      "type": "integer",
+      "description": "How many authors to collect from each publication (default 10).",
+      "default": 10,
+      "minimum": 1
+    },
+    "minRelevance": {
+      "title": "Minimum topic fit (0–1)",
+      "type": "number",
+      "description": "Leads scoring below this on topic match are flagged unqualified (still exported). 0.3 = loose match, 0.7 = strong match. Default 0.3.",
+      "default": 0.3,
+      "minimum": 0,
+      "maximum": 1
+    },
+    "includeContact": {
+      "title": "Only bill for leads with a public contact",
+      "type": "boolean",
+      "description": "On (recommended): you're only charged LEAD_DISCOVERED for leads that have a public email or social. Off: all qualified leads are billed.",
+      "default": true
+    },
+    "proxy": {
+      "title": "Proxy configuration",
+      "type": "object",
+      "description": "Apify proxy is ON by default and required — Substack blocks normal servers, so requests are routed through Apify's proxy automatically. You don't need to change this.",
+      "editor": "proxy",
+      "default": { "useApifyProxy": true },
+      "prefill": { "useApifyProxy": true },
+      "properties": {
+        "useApifyProxy": {
+          "title": "Use Apify proxy",
+          "type": "boolean",
+          "description": "Route requests through Apify proxy to avoid blocking."
+        }
+      }
+    }
+  },
+  "required": []
+}

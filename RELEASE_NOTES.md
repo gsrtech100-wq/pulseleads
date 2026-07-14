@@ -1,0 +1,38 @@
+# Release Notes — PulseLeads v1.0 (First Public Release)
+
+## What's new
+PulseLeads is AI-GIT's second commercial product: a Substack outreach lead generator that turns a
+topic into a ranked list of relevant writers with their public contact, ready to pitch.
+
+- **Discovery:** keyword (DuckDuckGo) or seed Substack URLs.
+- **Connector #1 (Substack):** RSS + author API, robots-respecting, proxy-safe (reuses the
+  proven StackPulse engine).
+- **Qualification:** configurable topic-fit scoring.
+- **Export:** clean lead rows with `hasEmail`, `twitter`, `linkedin`, `website`, plus a
+  "Contact-Ready Leads" view.
+- **Billing:** pay only for leads that include a public contact (`LEAD_DISCOVERED`).
+
+## Customer benefits
+- Find and qualify niche writers in minutes instead of hours of manual scrolling.
+- Pay for reachable leads, not raw data.
+- Output drops straight into outreach tools (CSV / JSON).
+
+## Limitations
+- **Substack only** in this release. Medium / GitHub / YouTube / blogs are documented
+  extension points (no core changes required to add them).
+- Keyword discovery relies on a public search index (DuckDuckGo MVP); volume users should
+  wire a paid search provider (SerpAPI / Bing).
+- `audienceSize` is frequently unavailable from public Substack APIs and may be `null`.
+- Authors without a published public contact are returned flagged `contactReady:false`.
+
+## Known issues
+- Pay-per-event pricing for the published Actor is finalized in the Apify Console
+  (Monetization); the Actor-PUT API on the build account rejects pricing fields, so this is a
+  one-step manual enablement before public billing goes live. The `LEAD_DISCOVERED` charge code
+  is in place and fires on every contact-ready lead once PPE is enabled.
+
+## Future roadmap
+- Production search providers (SerpAPI / Bing) for higher discovery volume.
+- Additional connectors (Medium, GitHub, YouTube, blogs).
+- Recruiter / PR preset views and CSV enrichment.
+- Subscription mode for recurring weekly discovery.

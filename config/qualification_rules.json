@@ -1,0 +1,11 @@
+{
+  "relevance": {
+    "keyword_weight": 1.0,
+    "min_score": 0.3,
+      "fields": ["name", "bio", "source_name"]
+  },
+  "audience": {
+    "unknown_as_zero": true
+  },
+  "contact_required_for_charge": true
+}

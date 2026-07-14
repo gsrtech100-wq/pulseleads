@@ -1,0 +1,59 @@
+{
+  "actorSpecification": 1,
+  "name": "substack-outreach-leads",
+  "title": "Substack Outreach Leads — Find & Pitch Niche Writers",
+  "description": "Type a topic (AI, finance, health) and get a list of relevant Substack writers with their public email and socials, ranked by topic fit — ready to pitch. Runs on Apify's proxy so it works even when Substack blocks bots. Pay only for leads that include a public contact.",
+  "version": "0.1",
+  "input": "./input_schema.json",
+  "dockerfile": "./Dockerfile",
+  "readme": "./README.md",
+  "storages": {
+    "dataset": {
+      "actorSpecification": 1,
+      "title": "Outreach Leads",
+      "views": {
+        "leads": {
+          "title": "All Leads",
+          "transformation": {
+            "fields": [
+              "authorName", "publicEmail", "hasEmail", "twitter", "linkedin",
+              "website", "sourceName", "sourceUrl", "authorBio", "audienceSize",
+              "relevanceScore", "qualified", "contactReady"
+            ]
+          },
+          "display": { "component": "table" }
+        },
+        "contact_ready": {
+          "title": "Contact-Ready Leads (emails + socials)",
+          "transformation": {
+            "fields": [
+              "authorName", "publicEmail", "twitter", "linkedin", "website",
+              "sourceName", "sourceUrl", "relevanceScore"
+            ]
+          },
+          "display": { "component": "table" }
+        }
+      },
+      "fields": {
+        "type": "object",
+        "properties": {
+          "platform": { "type": "string" },
+          "sourceName": { "type": ["string", "null"] },
+          "sourceUrl": { "type": ["string", "null"] },
+          "authorName": { "type": ["string", "null"] },
+          "authorBio": { "type": ["string", "null"] },
+          "publicEmail": { "type": ["string", "null"] },
+          "hasEmail": { "type": "boolean" },
+          "twitter": { "type": ["string", "null"] },
+          "linkedin": { "type": ["string", "null"] },
+          "website": { "type": ["string", "null"] },
+          "socialLinks": { "type": "string" },
+          "audienceSize": { "type": ["integer", "null"] },
+          "relevanceScore": { "type": "number" },
+          "qualified": { "type": "boolean" },
+          "contactReady": { "type": "boolean" }
+        }
+      }
+    }
+  }
+}

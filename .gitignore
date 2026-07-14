@@ -1,0 +1,23 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+.eggs/
+
+# Node / Apify
+node_modules/
+.actor/build/
+
+# Env / secrets
+.env
+*.local
+apify_token.txt
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Editor
+.vscode/
+.idea/
