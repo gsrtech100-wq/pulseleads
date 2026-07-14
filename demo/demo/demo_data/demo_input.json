@@ -1,0 +1,8 @@
+{
+  "keywords": ["AI", "finance"],
+  "newsletterUrls": ["https://lenny.substack.com"],
+  "maxAuthors": 10,
+  "minRelevance": 0.3,
+  "includeContact": true,
+  "proxy": { "useApifyProxy": true }
+}

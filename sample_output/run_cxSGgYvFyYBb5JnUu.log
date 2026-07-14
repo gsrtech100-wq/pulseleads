@@ -1,0 +1,65 @@
+﻿2026-07-14T14:35:23.546Z ACTOR: Pulling container image of build USrGMdQ70EodZ6BFa from registry.
+2026-07-14T14:35:23.548Z ACTOR: Creating container.
+2026-07-14T14:35:23.606Z ACTOR: Starting container.
+2026-07-14T14:35:23.607Z ACTOR: Running under "LIMITED_PERMISSIONS".
+2026-07-14T14:35:24.702Z WARNING:apify._configuration:Actor is running on the Apify platform, `disable_browser_sandbox` was changed to True.
+2026-07-14T14:35:24.705Z [apify] INFO  Initializing Actor ({"apify_sdk_version": "3.4.1", "apify_client_version": "2.5.1", "crawlee_version": "1.8.2", "python_version": "3.12.13", "os": "linux", "is_running_in_ipython": false})
+2026-07-14T14:35:24.901Z INFO:httpx:HTTP Request: GET https://lenny.substack.com/robots.txt "HTTP/1.1 301 Moved Permanently"
+2026-07-14T14:35:24.949Z INFO:httpx:HTTP Request: GET https://www.lennysnewsletter.com/robots.txt "HTTP/1.1 200 OK"
+2026-07-14T14:35:24.971Z INFO:httpx:HTTP Request: GET https://lenny.substack.com/api/v1/publication "HTTP/1.1 301 Moved Permanently"
+2026-07-14T14:35:25.003Z INFO:httpx:HTTP Request: GET https://www.lennysnewsletter.com/api/v1/publication "HTTP/1.1 403 Forbidden"
+2026-07-14T14:35:25.005Z INFO:src.fetcher:Publication API blocked for lenny.substack.com, falling back to RSS metadata
+2026-07-14T14:35:25.019Z INFO:httpx:HTTP Request: GET https://lenny.substack.com/feed "HTTP/1.1 301 Moved Permanently"
+2026-07-14T14:35:25.040Z INFO:httpx:HTTP Request: GET https://www.lennysnewsletter.com/feed "HTTP/1.1 200 OK"
+2026-07-14T14:35:25.078Z INFO:httpx:HTTP Request: GET https://lenny.substack.com/feed "HTTP/1.1 301 Moved Permanently"
+2026-07-14T14:35:25.095Z INFO:httpx:HTTP Request: GET https://www.lennysnewsletter.com/feed "HTTP/1.1 200 OK"
+2026-07-14T14:35:25.134Z INFO:httpx:HTTP Request: GET https://lenny.substack.com/api/v1/posts/how-i-ai-gpt-56-review-how-a-solo "HTTP/1.1 301 Moved Permanently"
+2026-07-14T14:35:25.183Z INFO:httpx:HTTP Request: GET https://www.lennysnewsletter.com/api/v1/posts/how-i-ai-gpt-56-review-how-a-solo "HTTP/1.1 200 OK"
+2026-07-14T14:35:25.215Z INFO:httpx:HTTP Request: GET https://lenny.substack.com/api/v1/author/1849774 "HTTP/1.1 301 Moved Permanently"
+2026-07-14T14:35:25.465Z INFO:httpx:HTTP Request: GET https://www.lennysnewsletter.com/api/v1/author/1849774 "HTTP/1.1 404 Not Found"
+2026-07-14T14:35:25.496Z INFO:httpx:HTTP Request: GET https://lenny.substack.com/api/v1/posts/this-solo-builder-runs-247-local "HTTP/1.1 301 Moved Permanently"
+2026-07-14T14:35:25.552Z INFO:httpx:HTTP Request: GET https://www.lennysnewsletter.com/api/v1/posts/this-solo-builder-runs-247-local "HTTP/1.1 200 OK"
+2026-07-14T14:35:25.576Z INFO:httpx:HTTP Request: GET https://lenny.substack.com/api/v1/author/5636738 "HTTP/1.1 301 Moved Permanently"
+2026-07-14T14:35:25.832Z INFO:httpx:HTTP Request: GET https://www.lennysnewsletter.com/api/v1/author/5636738 "HTTP/1.1 404 Not Found"
+2026-07-14T14:35:25.856Z INFO:httpx:HTTP Request: GET https://lenny.substack.com/api/v1/posts/how-tech-workers-actually-feel-about "HTTP/1.1 301 Moved Permanently"
+2026-07-14T14:35:25.915Z INFO:httpx:HTTP Request: GET https://www.lennysnewsletter.com/api/v1/posts/how-tech-workers-actually-feel-about "HTTP/1.1 200 OK"
+2026-07-14T14:35:25.942Z INFO:httpx:HTTP Request: GET https://lenny.substack.com/api/v1/author/1849774 "HTTP/1.1 301 Moved Permanently"
+2026-07-14T14:35:26.186Z INFO:httpx:HTTP Request: GET https://www.lennysnewsletter.com/api/v1/author/1849774 "HTTP/1.1 404 Not Found"
+2026-07-14T14:35:26.219Z INFO:httpx:HTTP Request: GET https://lenny.substack.com/api/v1/posts/community-wisdom-negative-network "HTTP/1.1 301 Moved Permanently"
+2026-07-14T14:35:26.287Z INFO:httpx:HTTP Request: GET https://www.lennysnewsletter.com/api/v1/posts/community-wisdom-negative-network "HTTP/1.1 200 OK"
+2026-07-14T14:35:26.307Z INFO:httpx:HTTP Request: GET https://lenny.substack.com/api/v1/author/3667529 "HTTP/1.1 301 Moved Permanently"
+2026-07-14T14:35:26.553Z INFO:httpx:HTTP Request: GET https://www.lennysnewsletter.com/api/v1/author/3667529 "HTTP/1.1 404 Not Found"
+2026-07-14T14:35:26.587Z INFO:httpx:HTTP Request: GET https://lenny.substack.com/api/v1/posts/gpt-56-sol-vs-claude-fable-why-openais "HTTP/1.1 301 Moved Permanently"
+2026-07-14T14:35:26.632Z INFO:httpx:HTTP Request: GET https://www.lennysnewsletter.com/api/v1/posts/gpt-56-sol-vs-claude-fable-why-openais "HTTP/1.1 200 OK"
+2026-07-14T14:35:26.661Z INFO:httpx:HTTP Request: GET https://lenny.substack.com/api/v1/author/5636738 "HTTP/1.1 301 Moved Permanently"
+2026-07-14T14:35:26.876Z INFO:httpx:HTTP Request: GET https://www.lennysnewsletter.com/api/v1/author/5636738 "HTTP/1.1 404 Not Found"
+2026-07-14T14:35:26.908Z INFO:httpx:HTTP Request: GET https://lenny.substack.com/api/v1/posts/adam-mosseri-ai-is-a-tailwind-for "HTTP/1.1 301 Moved Permanently"
+2026-07-14T14:35:26.950Z INFO:httpx:HTTP Request: GET https://www.lennysnewsletter.com/api/v1/posts/adam-mosseri-ai-is-a-tailwind-for "HTTP/1.1 200 OK"
+2026-07-14T14:35:26.973Z INFO:httpx:HTTP Request: GET https://lenny.substack.com/api/v1/author/1849774 "HTTP/1.1 301 Moved Permanently"
+2026-07-14T14:35:27.221Z INFO:httpx:HTTP Request: GET https://www.lennysnewsletter.com/api/v1/author/1849774 "HTTP/1.1 404 Not Found"
+2026-07-14T14:35:27.252Z INFO:httpx:HTTP Request: GET https://lenny.substack.com/api/v1/posts/what-a-harness-is-and-how-to-build "HTTP/1.1 301 Moved Permanently"
+2026-07-14T14:35:27.323Z INFO:httpx:HTTP Request: GET https://www.lennysnewsletter.com/api/v1/posts/what-a-harness-is-and-how-to-build "HTTP/1.1 200 OK"
+2026-07-14T14:35:27.344Z INFO:httpx:HTTP Request: GET https://lenny.substack.com/api/v1/author/5636738 "HTTP/1.1 301 Moved Permanently"
+2026-07-14T14:35:27.633Z INFO:httpx:HTTP Request: GET https://www.lennysnewsletter.com/api/v1/author/5636738 "HTTP/1.1 404 Not Found"
+2026-07-14T14:35:27.661Z INFO:httpx:HTTP Request: GET https://lenny.substack.com/api/v1/posts/how-tech-workers-are-feeling-in-2026 "HTTP/1.1 301 Moved Permanently"
+2026-07-14T14:35:27.732Z INFO:httpx:HTTP Request: GET https://www.lennysnewsletter.com/api/v1/posts/how-tech-workers-are-feeling-in-2026 "HTTP/1.1 200 OK"
+2026-07-14T14:35:27.757Z INFO:httpx:HTTP Request: GET https://lenny.substack.com/api/v1/author/2755827 "HTTP/1.1 301 Moved Permanently"
+2026-07-14T14:35:28.026Z INFO:httpx:HTTP Request: GET https://www.lennysnewsletter.com/api/v1/author/2755827 "HTTP/1.1 404 Not Found"
+2026-07-14T14:35:28.057Z INFO:httpx:HTTP Request: GET https://lenny.substack.com/api/v1/posts/how-i-ai-sonnet-5-review-and-how "HTTP/1.1 301 Moved Permanently"
+2026-07-14T14:35:28.118Z INFO:httpx:HTTP Request: GET https://www.lennysnewsletter.com/api/v1/posts/how-i-ai-sonnet-5-review-and-how "HTTP/1.1 200 OK"
+2026-07-14T14:35:28.143Z INFO:httpx:HTTP Request: GET https://lenny.substack.com/api/v1/author/1849774 "HTTP/1.1 301 Moved Permanently"
+2026-07-14T14:35:28.395Z INFO:httpx:HTTP Request: GET https://www.lennysnewsletter.com/api/v1/author/1849774 "HTTP/1.1 404 Not Found"
+2026-07-14T14:35:28.434Z INFO:httpx:HTTP Request: GET https://lenny.substack.com/api/v1/posts/how-i-run-autonomous-coding-agents "HTTP/1.1 301 Moved Permanently"
+2026-07-14T14:35:28.501Z INFO:httpx:HTTP Request: GET https://www.lennysnewsletter.com/api/v1/posts/how-i-run-autonomous-coding-agents "HTTP/1.1 200 OK"
+2026-07-14T14:35:28.522Z INFO:httpx:HTTP Request: GET https://lenny.substack.com/api/v1/author/5636738 "HTTP/1.1 301 Moved Permanently"
+2026-07-14T14:35:28.725Z INFO:httpx:HTTP Request: GET https://www.lennysnewsletter.com/api/v1/author/5636738 "HTTP/1.1 404 Not Found"
+2026-07-14T14:35:28.726Z [apify] INFO  Fetched 4 profiles from lenny.substack.com
+2026-07-14T14:35:28.938Z [apify] WARN  Exported 4 writer(s), but 0 are billable (no public contact found).
+2026-07-14T14:35:28.940Z   Why: these authors don't publish a public email or social on Substack.
+2026-07-14T14:35:28.940Z   What to try next:
+2026-07-14T14:35:28.941Z     - Use broader keywords to discover more authors.
+2026-07-14T14:35:28.941Z     - Set 'includeContact' = false to receive the full list
+2026-07-14T14:35:28.941Z       (all qualified leads are then billed, contacts or not).
+2026-07-14T14:35:28.941Z [apify] INFO  === RUN SUMMARY ===  sources: 1 | writers: 4 | billable (contact-ready): 0
+2026-07-14T14:35:28.942Z [apify] INFO  Exiting Actor ({"exit_code": 0})
+

@@ -30,10 +30,16 @@ topic into a ranked list of relevant writers with their public contact, ready to
 - Authors without a published public contact are returned flagged `contactReady:false`.
 
 ## Known issues
-- Pay-per-event pricing for the published Actor is finalized in the Apify Console
-  (Monetization); the Actor-PUT API on the build account rejects pricing fields, so this is a
-  one-step manual enablement before public billing goes live. The `LEAD_DISCOVERED` charge code
-  is in place and fires on every contact-ready lead once PPE is enabled.
+- **Pay-per-event pricing is set manually in the Apify Console (Monetization).** The Apify Update
+  Actor API returns `internal-server-error` on every `pricingInfos` write (attempted: FREE,
+  PAY_PER_EVENT, minimal, with timestamps, while private, and via the version endpoint) — a
+  platform defect in the pricing-change notification path, not a schema rejection. This is a
+  one-time manual enablement: add events `apify-actor-start` $0.00005,
+  `apify-default-dataset-item` $0.00050, `LEAD_DISCOVERED` $0.00030. The `LEAD_DISCOVERED` charge
+  code is in place and fires on every contact-ready lead once PPE is enabled.
+- **Keyword discovery depends on DuckDuckGo** (MVP). It intermittently returns `202 Accepted`
+  (bot challenge) instead of `200`, yielding 0 sources. Seed `newsletterUrls` always work and are
+  the reliable path; volume users should wire SerpAPI/Bing for guaranteed discovery volume.
 
 ## Future roadmap
 - Production search providers (SerpAPI / Bing) for higher discovery volume.
