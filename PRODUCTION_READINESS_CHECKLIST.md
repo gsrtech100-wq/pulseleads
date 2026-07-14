@@ -1,4 +1,4 @@
-# PulseLeads — Production Readiness Checklist
+# AZ PulseLeads — Production Readiness Checklist
 
 Status: ✅ Code / Docs / Repo / Run verified. ⚠ One manual step (Console PPE enablement) before public billing goes live.
 

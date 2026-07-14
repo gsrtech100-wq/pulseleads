@@ -1,8 +1,8 @@
 {
   "actorSpecification": 1,
   "name": "substack-outreach-leads",
-  "title": "Substack Outreach Leads — Find & Pitch Niche Writers",
-  "description": "Type a topic (AI, finance, health) and get a list of relevant Substack writers with their public email and socials, ranked by topic fit — ready to pitch. Runs on Apify's proxy so it works even when Substack blocks bots. Pay only for leads that include a public contact.",
+  "title": "AZ PulseLeads — Substack Outreach Lead Generator",
+  "description": "AZ PulseLeads turns a topic into a ranked list of relevant Substack writers with their public email and socials — ready to pitch for PR, partnerships, influencer, or recruiting. Runs on a proxy so it works even when Substack blocks bots. Pay only for leads that include a public contact.",
   "version": "0.1",
   "input": "./input_schema.json",
   "dockerfile": "./Dockerfile",

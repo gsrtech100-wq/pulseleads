@@ -1,4 +1,4 @@
-# PulseLeads v1.0 — Final Release Report
+# AZ PulseLeads v1.0 — Final Release Report
 
 ## 1. Claude review fixes completed
 - **Empty-result handling (Phase 1.1):** `src/main.py` now emits customer-friendly messages for
@@ -27,7 +27,7 @@
 - **docs/product.md** — immutable lineage (PPE #2 → discovery → redesign → evidence → product).
 
 ## 4. SYSTEM updates completed
-- `SYSTEM.md` (v2.4) gained a **Product Factory Released Products** section recording PulseLeads'
+- `SYSTEM.md` (v2.4) gained a **Product Factory Released Products** section recording AZ PulseLeads'
   evolution from PPE Product #2 with full traceability and links to the Apify Actor, GitHub repo,
   and product record. Architecture doc referenced; portfolio-guardrail context preserved.
 

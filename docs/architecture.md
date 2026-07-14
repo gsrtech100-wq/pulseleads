@@ -1,4 +1,8 @@
-# PulseLeads — Architecture
+![AZ PulseLeads](demo/branding/az_pulseleads_light.png)
+
+# AZ PulseLeads — Architecture
+
+*An AZULGANZES TECHNOLOGIES product.*
 
 **Status:** Frozen connector architecture. Substack is Connector #1 (implemented); other
 platforms are documented extension points. Adding a platform requires **no core changes**.
@@ -30,11 +34,11 @@ orchestrator, enrichment, qualification, and export services are platform-agnost
 
 | Connector | Status | Notes |
 |---|---|---|
-| **Substack** | **IMPLEMENTED** | Adapter over StackPulse `SubstackFetcher` (RSS + author API + robots + proxy + retry). |
+| **Substack** | **IMPLEMENTED** | Adapter over AZ StackPulse `SubstackFetcher` (RSS + author API + robots + proxy + retry). |
 | Medium | Extension point | `fetch_profiles` via Medium public API/RSS. |
 | GitHub | Extension point | Via GitHub REST/GraphQL; map repos → maintainers. |
 | YouTube | Extension point | Via YouTube Data API; map channels → creators. |
-| Blogs (RSS) | Extension point | Generic RSS connector reusing the StackPulse parser. |
+| Blogs (RSS) | Extension point | Generic RSS connector reusing the AZ StackPulse parser. |
 
 ## Search providers
 

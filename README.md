@@ -1,8 +1,12 @@
-# PulseLeads — Substack Outreach Lead Generator
+![AZ PulseLeads](demo/branding/az_pulseleads_light.png)
+
+# AZ PulseLeads — Substack Outreach Lead Generator
 
 **Stop scrolling Substack for people to pitch. Type a topic, get a ranked list of relevant writers with their public email and socials — ready to reach out for PR, partnerships, influencer, or recruiting.**
 
-PulseLeads turns a keyword or a list of Substack publications into an **outreach lead list**: the right authors and publications in your niche, with their **public contact info** (when published) and a **topic-fit score** — ready to drop into your outreach.
+*AZ PulseLeads is an AZULGANZES TECHNOLOGIES product (Product Factory naming: AZ StackPulse, AZ PulseLeads).*
+
+AZ PulseLeads turns a keyword or a list of Substack publications into an **outreach lead list**: the right authors and publications in your niche, with their **public contact info** (when published) and a **topic-fit score** — ready to drop into your outreach.
 
 > **Ethical use:** only public Substack data is used. Use the output only for lawful outreach, honor opt-outs, and comply with applicable privacy law (e.g. GDPR). We never invent contact data.
 
@@ -15,7 +19,7 @@ PR agencies, marketers, recruiters, and partnership teams need to reach relevant
 ## Customer solution
 
 1. **You provide** a topic (e.g. `AI`, `finance`, `health`) **or** paste known Substack URLs.
-2. **PulseLeads discovers** relevant Substack publications (search index + seed URLs).
+2. **AZ PulseLeads discovers** relevant Substack publications (search index + seed URLs).
 3. **It extracts** the authors, their public email / socials, and a topic-fit score.
 4. **You export** a clean, contact-ready lead list (CSV / JSON) and pay only for leads that include a public contact.
 
@@ -83,8 +87,8 @@ See [`sample_output/`](sample_output/) for a real production run.
 
 See [`docs/architecture.md`](docs/architecture.md). The product uses a frozen connector
 architecture: `SEARCH → CONNECTOR → ENRICHMENT → QUALIFICATION → EXPORT`. Substack is
-**Connector #1** (fully implemented); Medium, GitHub, YouTube, and blogs are documented
-extension points that require no core changes.
+**Connector #1** (fully implemented, reusing the proven AZ StackPulse engine); Medium, GitHub,
+YouTube, and blogs are documented extension points that require no core changes.
 
 ## Troubleshooting
 

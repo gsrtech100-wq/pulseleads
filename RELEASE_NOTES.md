@@ -1,12 +1,16 @@
-# Release Notes — PulseLeads v1.0 (First Public Release)
+![AZ PulseLeads](demo/branding/az_pulseleads_light.png)
+
+# Release Notes — AZ PulseLeads v1.0 (First Public Release)
+
+*An AZULGANZES TECHNOLOGIES product.*
 
 ## What's new
-PulseLeads is AI-GIT's second commercial product: a Substack outreach lead generator that turns a
+AZ PulseLeads is AI-GIT's second commercial product: a Substack outreach lead generator that turns a
 topic into a ranked list of relevant writers with their public contact, ready to pitch.
 
 - **Discovery:** keyword (DuckDuckGo) or seed Substack URLs.
 - **Connector #1 (Substack):** RSS + author API, robots-respecting, proxy-safe (reuses the
-  proven StackPulse engine).
+  proven AZ StackPulse engine).
 - **Qualification:** configurable topic-fit scoring.
 - **Export:** clean lead rows with `hasEmail`, `twitter`, `linkedin`, `website`, plus a
   "Contact-Ready Leads" view.

@@ -1,4 +1,8 @@
-# PulseLeads — Product Record (Traceability)
+![AZ PulseLeads](demo/branding/az_pulseleads_light.png)
+
+# AZ PulseLeads — Product Record (Traceability)
+
+*An AZULGANZES TECHNOLOGIES product.*
 
 This document preserves the evolution of AI-GIT's second commercial product for audit and
 governance. It is immutable history — do not rewrite; append corrections as new entries.
@@ -13,7 +17,7 @@ PPE Product #2  "Substack Author Profile Extractor"   (original concept: data ex
    not raw profile dumps. "Leads I can email" > "profiles I can read".
         │
         ▼  Business Redesign (HY3)
-   Re-positioned as PulseLeads — a qualified-outreach-lead solution.
+   Re-positioned as AZ PulseLeads — a qualified-outreach-lead solution.
    Discovery = search-index + seed-URL hybrid (NOT Substack-native API, which is closed).
    Revenue = LEAD_DISCOVERED (pay for qualified, contact-ready leads).
         │
@@ -23,7 +27,7 @@ PPE Product #2  "Substack Author Profile Extractor"   (original concept: data ex
    relevant substack domains. Option B (workflow change) chosen: buildable.
         │
         ▼  Final Commercial Product
-   PulseLeads — Substack Outreach Lead Generator (Substack-only MVP on the frozen
+   AZ PulseLeads — Substack Outreach Lead Generator (Substack-only MVP on the frozen
    Connector Architecture). Apify Actor: pure_matai~substack-outreach-leads.
 ```
 
@@ -41,3 +45,4 @@ PPE Product #2  "Substack Author Profile Extractor"   (original concept: data ex
   (see `sample_output/`).
 - `RELEASE_NOTES.md` — public release notes.
 - `CHANGELOG.md` — release history.
+- `demo/` — self-contained demonstration package (script, checklist, screenshots, FAQ, assets).
