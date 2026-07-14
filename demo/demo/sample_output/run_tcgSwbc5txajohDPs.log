@@ -1,0 +1,37 @@
+﻿2026-07-14T13:15:10.710Z ACTOR: Pulling container image of build d5YjvShyraRHAlGQM from registry.
+2026-07-14T13:15:12.187Z ACTOR: Creating container.
+2026-07-14T13:15:12.455Z ACTOR: Starting container.
+2026-07-14T13:15:12.457Z ACTOR: Running under "LIMITED_PERMISSIONS".
+2026-07-14T13:15:14.011Z WARNING:apify._configuration:Actor is running on the Apify platform, `disable_browser_sandbox` was changed to True.
+2026-07-14T13:15:14.016Z [apify] INFO  Initializing Actor ({"apify_sdk_version": "3.4.1", "apify_client_version": "2.5.1", "crawlee_version": "1.8.2", "python_version": "3.12.13", "os": "linux", "is_running_in_ipython": false})
+2026-07-14T13:15:14.320Z INFO:httpx:HTTP Request: GET https://lenny.substack.com/robots.txt "HTTP/1.1 301 Moved Permanently"
+2026-07-14T13:15:14.364Z INFO:httpx:HTTP Request: GET https://www.lennysnewsletter.com/robots.txt "HTTP/1.1 200 OK"
+2026-07-14T13:15:14.397Z INFO:httpx:HTTP Request: GET https://lenny.substack.com/api/v1/publication "HTTP/1.1 301 Moved Permanently"
+2026-07-14T13:15:14.435Z INFO:httpx:HTTP Request: GET https://www.lennysnewsletter.com/api/v1/publication "HTTP/1.1 403 Forbidden"
+2026-07-14T13:15:14.436Z INFO:src.fetcher:Publication API blocked for lenny.substack.com, falling back to RSS metadata
+2026-07-14T13:15:14.459Z INFO:httpx:HTTP Request: GET https://lenny.substack.com/feed "HTTP/1.1 301 Moved Permanently"
+2026-07-14T13:15:14.479Z INFO:httpx:HTTP Request: GET https://www.lennysnewsletter.com/feed "HTTP/1.1 200 OK"
+2026-07-14T13:15:14.524Z INFO:httpx:HTTP Request: GET https://lenny.substack.com/feed "HTTP/1.1 301 Moved Permanently"
+2026-07-14T13:15:14.545Z INFO:httpx:HTTP Request: GET https://www.lennysnewsletter.com/feed "HTTP/1.1 200 OK"
+2026-07-14T13:15:14.585Z INFO:httpx:HTTP Request: GET https://lenny.substack.com/api/v1/posts/how-i-ai-gpt-56-review-how-a-solo "HTTP/1.1 301 Moved Permanently"
+2026-07-14T13:15:14.641Z INFO:httpx:HTTP Request: GET https://www.lennysnewsletter.com/api/v1/posts/how-i-ai-gpt-56-review-how-a-solo "HTTP/1.1 200 OK"
+2026-07-14T13:15:14.667Z INFO:httpx:HTTP Request: GET https://lenny.substack.com/api/v1/author/1849774 "HTTP/1.1 301 Moved Permanently"
+2026-07-14T13:15:14.926Z INFO:httpx:HTTP Request: GET https://www.lennysnewsletter.com/api/v1/author/1849774 "HTTP/1.1 404 Not Found"
+2026-07-14T13:15:14.957Z INFO:httpx:HTTP Request: GET https://lenny.substack.com/api/v1/posts/this-solo-builder-runs-247-local "HTTP/1.1 301 Moved Permanently"
+2026-07-14T13:15:15.005Z INFO:httpx:HTTP Request: GET https://www.lennysnewsletter.com/api/v1/posts/this-solo-builder-runs-247-local "HTTP/1.1 200 OK"
+2026-07-14T13:15:15.035Z INFO:httpx:HTTP Request: GET https://lenny.substack.com/api/v1/author/5636738 "HTTP/1.1 301 Moved Permanently"
+2026-07-14T13:15:15.274Z INFO:httpx:HTTP Request: GET https://www.lennysnewsletter.com/api/v1/author/5636738 "HTTP/1.1 404 Not Found"
+2026-07-14T13:15:15.298Z INFO:httpx:HTTP Request: GET https://lenny.substack.com/api/v1/posts/how-tech-workers-actually-feel-about "HTTP/1.1 301 Moved Permanently"
+2026-07-14T13:15:15.342Z INFO:httpx:HTTP Request: GET https://www.lennysnewsletter.com/api/v1/posts/how-tech-workers-actually-feel-about "HTTP/1.1 200 OK"
+2026-07-14T13:15:15.366Z INFO:httpx:HTTP Request: GET https://lenny.substack.com/api/v1/author/1849774 "HTTP/1.1 301 Moved Permanently"
+2026-07-14T13:15:15.632Z INFO:httpx:HTTP Request: GET https://www.lennysnewsletter.com/api/v1/author/1849774 "HTTP/1.1 404 Not Found"
+2026-07-14T13:15:15.640Z [apify] INFO  Fetched 2 profiles from lenny.substack.com
+2026-07-14T13:15:15.824Z [apify] WARN  Exported 2 writer(s), but 0 are billable (no public contact found).
+2026-07-14T13:15:15.825Z   Why: these authors don't publish a public email or social on Substack.
+2026-07-14T13:15:15.826Z   What to try next:
+2026-07-14T13:15:15.827Z     - Use broader keywords to discover more authors.
+2026-07-14T13:15:15.827Z     - Set 'includeContact' = false to receive the full list
+2026-07-14T13:15:15.828Z       (all qualified leads are then billed, contacts or not).
+2026-07-14T13:15:15.829Z [apify] INFO  === RUN SUMMARY ===  sources: 1 | writers: 2 | billable (contact-ready): 0
+2026-07-14T13:15:15.829Z [apify] INFO  Exiting Actor ({"exit_code": 0})
+

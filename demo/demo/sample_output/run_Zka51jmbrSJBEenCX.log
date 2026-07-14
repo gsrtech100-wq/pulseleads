@@ -1,0 +1,151 @@
+﻿2026-07-14T15:44:32.744Z ACTOR: Pulling container image of build afJO5DbbzcF4xvkcM from registry.
+2026-07-14T15:44:34.075Z ACTOR: Creating container.
+2026-07-14T15:44:34.108Z ACTOR: Starting container.
+2026-07-14T15:44:34.110Z ACTOR: Running under "LIMITED_PERMISSIONS".
+2026-07-14T15:44:36.137Z WARNING:apify._configuration:Actor is running on the Apify platform, `disable_browser_sandbox` was changed to True.
+2026-07-14T15:44:36.141Z [apify] INFO  Initializing Actor ({"apify_sdk_version": "3.4.1", "apify_client_version": "2.5.1", "crawlee_version": "1.8.2", "python_version": "3.12.13", "os": "linux", "is_running_in_ipython": false})
+2026-07-14T15:44:36.341Z INFO:httpx:HTTP Request: GET https://www.notboring.co/robots.txt "HTTP/1.1 200 OK"
+2026-07-14T15:44:36.380Z INFO:httpx:HTTP Request: GET https://www.notboring.co/api/v1/publication "HTTP/1.1 403 Forbidden"
+2026-07-14T15:44:36.384Z INFO:src.fetcher:Publication API blocked for www.notboring.co, falling back to RSS metadata
+2026-07-14T15:44:36.386Z INFO:httpx:HTTP Request: GET https://www.notboring.co/feed "HTTP/1.1 200 OK"
+2026-07-14T15:44:36.427Z INFO:httpx:HTTP Request: GET https://www.notboring.co/feed "HTTP/1.1 200 OK"
+2026-07-14T15:44:36.486Z INFO:httpx:HTTP Request: GET https://www.notboring.co/api/v1/posts/weekly-dose-of-optimism-201 "HTTP/1.1 200 OK"
+2026-07-14T15:44:36.709Z INFO:httpx:HTTP Request: GET https://www.notboring.co/api/v1/author/2417812 "HTTP/1.1 404 Not Found"
+2026-07-14T15:44:36.756Z INFO:httpx:HTTP Request: GET https://www.notboring.co/api/v1/posts/weekly-dose-of-optimism-200 "HTTP/1.1 200 OK"
+2026-07-14T15:44:36.973Z INFO:httpx:HTTP Request: GET https://www.notboring.co/api/v1/author/2417812 "HTTP/1.1 404 Not Found"
+2026-07-14T15:44:37.033Z INFO:httpx:HTTP Request: GET https://www.notboring.co/api/v1/posts/americas-next-250 "HTTP/1.1 200 OK"
+2026-07-14T15:44:37.286Z INFO:httpx:HTTP Request: GET https://www.notboring.co/api/v1/author/2417812 "HTTP/1.1 404 Not Found"
+2026-07-14T15:44:37.352Z INFO:httpx:HTTP Request: GET https://www.notboring.co/api/v1/posts/weekly-dose-of-optimism-199 "HTTP/1.1 200 OK"
+2026-07-14T15:44:37.578Z INFO:httpx:HTTP Request: GET https://www.notboring.co/api/v1/author/2417812 "HTTP/1.1 404 Not Found"
+2026-07-14T15:44:37.642Z INFO:httpx:HTTP Request: GET https://www.notboring.co/api/v1/posts/weekly-dose-of-optimism-198 "HTTP/1.1 200 OK"
+2026-07-14T15:44:37.887Z INFO:httpx:HTTP Request: GET https://www.notboring.co/api/v1/author/2417812 "HTTP/1.1 404 Not Found"
+2026-07-14T15:44:37.938Z INFO:httpx:HTTP Request: GET https://www.notboring.co/api/v1/posts/weekly-dose-of-optimism-197 "HTTP/1.1 200 OK"
+2026-07-14T15:44:38.154Z INFO:httpx:HTTP Request: GET https://www.notboring.co/api/v1/author/2417812 "HTTP/1.1 404 Not Found"
+2026-07-14T15:44:38.223Z INFO:httpx:HTTP Request: GET https://www.notboring.co/api/v1/posts/return-on-tokens-rot "HTTP/1.1 200 OK"
+2026-07-14T15:44:38.422Z INFO:httpx:HTTP Request: GET https://www.notboring.co/api/v1/author/2417812 "HTTP/1.1 404 Not Found"
+2026-07-14T15:44:38.496Z INFO:httpx:HTTP Request: GET https://www.notboring.co/api/v1/posts/expanding-the-radius-of-daily-life "HTTP/1.1 200 OK"
+2026-07-14T15:44:38.711Z INFO:httpx:HTTP Request: GET https://www.notboring.co/api/v1/author/2417812 "HTTP/1.1 404 Not Found"
+2026-07-14T15:44:38.765Z INFO:httpx:HTTP Request: GET https://www.notboring.co/api/v1/posts/weekly-dose-of-optimism-196 "HTTP/1.1 200 OK"
+2026-07-14T15:44:38.965Z INFO:httpx:HTTP Request: GET https://www.notboring.co/api/v1/author/2417812 "HTTP/1.1 404 Not Found"
+2026-07-14T15:44:39.050Z INFO:httpx:HTTP Request: GET https://www.notboring.co/api/v1/posts/westmag "HTTP/1.1 200 OK"
+2026-07-14T15:44:39.257Z INFO:httpx:HTTP Request: GET https://www.notboring.co/api/v1/author/2417812 "HTTP/1.1 404 Not Found"
+2026-07-14T15:44:39.259Z [apify] INFO  Fetched 1 profiles from www.notboring.co
+2026-07-14T15:44:39.301Z INFO:httpx:HTTP Request: GET https://www.thegeneralist.com/robots.txt "HTTP/1.1 200 OK"
+2026-07-14T15:44:39.304Z INFO:httpx:HTTP Request: GET https://www.thegeneralist.com/api/v1/publication "HTTP/1.1 404 Not Found"
+2026-07-14T15:44:39.305Z WARNING:src.fetcher:Failed to fetch publication info for www.thegeneralist.com: Client error '404 Not Found' for url 'https://www.thegeneralist.com/api/v1/publication'
+2026-07-14T15:44:39.307Z For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/404 — falling back to RSS
+2026-07-14T15:44:39.309Z INFO:httpx:HTTP Request: GET https://www.thegeneralist.com/feed "HTTP/1.1 200 OK"
+2026-07-14T15:44:39.312Z INFO:httpx:HTTP Request: GET https://www.thegeneralist.com/feed "HTTP/1.1 200 OK"
+2026-07-14T15:44:39.314Z [apify] INFO  Fetched 0 profiles from www.thegeneralist.com
+2026-07-14T15:44:39.415Z INFO:httpx:HTTP Request: GET https://www.moneywithkatie.com/robots.txt "HTTP/1.1 301 Moved Permanently"
+2026-07-14T15:44:39.531Z INFO:httpx:HTTP Request: GET https://moneywithkatie.com/robots.txt "HTTP/1.1 200 OK"
+2026-07-14T15:44:39.587Z INFO:httpx:HTTP Request: GET https://www.moneywithkatie.com/api/v1/publication "HTTP/1.1 301 Moved Permanently"
+2026-07-14T15:44:39.675Z INFO:httpx:HTTP Request: GET https://moneywithkatie.com/api/v1/publication "HTTP/1.1 404 Not Found"
+2026-07-14T15:44:39.684Z WARNING:src.fetcher:Failed to fetch publication info for www.moneywithkatie.com: Client error '404 Not Found' for url 'https://moneywithkatie.com/api/v1/publication'
+2026-07-14T15:44:39.685Z For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/404 — falling back to RSS
+2026-07-14T15:44:39.747Z INFO:httpx:HTTP Request: GET https://www.moneywithkatie.com/feed "HTTP/1.1 301 Moved Permanently"
+2026-07-14T15:44:39.822Z INFO:httpx:HTTP Request: GET https://moneywithkatie.com/feed/ "HTTP/1.1 200 OK"
+2026-07-14T15:44:39.944Z INFO:httpx:HTTP Request: GET https://www.moneywithkatie.com/feed "HTTP/1.1 301 Moved Permanently"
+2026-07-14T15:44:40.008Z INFO:httpx:HTTP Request: GET https://moneywithkatie.com/feed/ "HTTP/1.1 200 OK"
+2026-07-14T15:44:40.108Z INFO:httpx:HTTP Request: GET https://www.moneywithkatie.com/api/v1/posts/?post_type=essays&p=2662 "HTTP/1.1 301 Moved Permanently"
+2026-07-14T15:44:40.182Z INFO:httpx:HTTP Request: GET https://moneywithkatie.com/essays/end-of-year-letter-from-katie/ "HTTP/1.1 200 OK"
+2026-07-14T15:44:40.185Z WARNING:src.fetcher:Failed to fetch post ?post_type=essays&p=2662 for www.moneywithkatie.com: Expecting value: line 1 column 1 (char 0)
+2026-07-14T15:44:40.238Z INFO:httpx:HTTP Request: GET https://www.moneywithkatie.com/api/v1/posts/?post_type=essays&p=2654 "HTTP/1.1 301 Moved Permanently"
+2026-07-14T15:44:40.331Z INFO:httpx:HTTP Request: GET https://moneywithkatie.com/essays/proof-of-work/ "HTTP/1.1 200 OK"
+2026-07-14T15:44:40.333Z WARNING:src.fetcher:Failed to fetch post ?post_type=essays&p=2654 for www.moneywithkatie.com: Expecting value: line 1 column 1 (char 0)
+2026-07-14T15:44:40.401Z INFO:httpx:HTTP Request: GET https://www.moneywithkatie.com/api/v1/posts/?post_type=essays&p=2640 "HTTP/1.1 301 Moved Permanently"
+2026-07-14T15:44:40.460Z INFO:httpx:HTTP Request: GET https://moneywithkatie.com/essays/the-last-of-the-old-west/ "HTTP/1.1 200 OK"
+2026-07-14T15:44:40.462Z WARNING:src.fetcher:Failed to fetch post ?post_type=essays&p=2640 for www.moneywithkatie.com: Expecting value: line 1 column 1 (char 0)
+2026-07-14T15:44:40.526Z INFO:httpx:HTTP Request: GET https://www.moneywithkatie.com/api/v1/posts/?post_type=essays&p=2633 "HTTP/1.1 301 Moved Permanently"
+2026-07-14T15:44:40.609Z INFO:httpx:HTTP Request: GET https://moneywithkatie.com/essays/joan-didion-saw-the-ai-bubble-coming/ "HTTP/1.1 200 OK"
+2026-07-14T15:44:40.611Z WARNING:src.fetcher:Failed to fetch post ?post_type=essays&p=2633 for www.moneywithkatie.com: Expecting value: line 1 column 1 (char 0)
+2026-07-14T15:44:40.702Z INFO:httpx:HTTP Request: GET https://www.moneywithkatie.com/api/v1/posts/?post_type=essays&p=2620 "HTTP/1.1 301 Moved Permanently"
+2026-07-14T15:44:40.757Z INFO:httpx:HTTP Request: GET https://moneywithkatie.com/essays/the-provider-aesthetic-of-love-is-blind/ "HTTP/1.1 200 OK"
+2026-07-14T15:44:40.761Z WARNING:src.fetcher:Failed to fetch post ?post_type=essays&p=2620 for www.moneywithkatie.com: Expecting value: line 1 column 1 (char 0)
+2026-07-14T15:44:40.831Z INFO:httpx:HTTP Request: GET https://www.moneywithkatie.com/api/v1/posts/?post_type=essays&p=2586 "HTTP/1.1 301 Moved Permanently"
+2026-07-14T15:44:40.944Z INFO:httpx:HTTP Request: GET https://moneywithkatie.com/essays/babygirl-girlbosses-and-economic-nostalgia/ "HTTP/1.1 200 OK"
+2026-07-14T15:44:40.945Z WARNING:src.fetcher:Failed to fetch post ?post_type=essays&p=2586 for www.moneywithkatie.com: Expecting value: line 1 column 1 (char 0)
+2026-07-14T15:44:41.023Z INFO:httpx:HTTP Request: GET https://www.moneywithkatie.com/api/v1/posts/?post_type=essays&p=2572 "HTTP/1.1 301 Moved Permanently"
+2026-07-14T15:44:41.127Z INFO:httpx:HTTP Request: GET https://moneywithkatie.com/essays/a-political-economy-theory-of-the-glow-up/ "HTTP/1.1 200 OK"
+2026-07-14T15:44:41.129Z WARNING:src.fetcher:Failed to fetch post ?post_type=essays&p=2572 for www.moneywithkatie.com: Expecting value: line 1 column 1 (char 0)
+2026-07-14T15:44:41.204Z INFO:httpx:HTTP Request: GET https://www.moneywithkatie.com/api/v1/posts/?post_type=essays&p=2479 "HTTP/1.1 301 Moved Permanently"
+2026-07-14T15:44:41.284Z INFO:httpx:HTTP Request: GET https://moneywithkatie.com/essays/past-lives/ "HTTP/1.1 200 OK"
+2026-07-14T15:44:41.285Z WARNING:src.fetcher:Failed to fetch post ?post_type=essays&p=2479 for www.moneywithkatie.com: Expecting value: line 1 column 1 (char 0)
+2026-07-14T15:44:41.351Z INFO:httpx:HTTP Request: GET https://www.moneywithkatie.com/api/v1/posts/?post_type=essays&p=2476 "HTTP/1.1 301 Moved Permanently"
+2026-07-14T15:44:41.445Z INFO:httpx:HTTP Request: GET https://moneywithkatie.com/essays/americas-housing-paradox-hiding-in-plain-sight/ "HTTP/1.1 200 OK"
+2026-07-14T15:44:41.451Z WARNING:src.fetcher:Failed to fetch post ?post_type=essays&p=2476 for www.moneywithkatie.com: Expecting value: line 1 column 1 (char 0)
+2026-07-14T15:44:41.453Z [apify] INFO  Fetched 1 profiles from www.moneywithkatie.com
+2026-07-14T15:44:41.498Z INFO:httpx:HTTP Request: GET https://lenny.substack.com/robots.txt "HTTP/1.1 301 Moved Permanently"
+2026-07-14T15:44:41.558Z INFO:httpx:HTTP Request: GET https://www.lennysnewsletter.com/robots.txt "HTTP/1.1 200 OK"
+2026-07-14T15:44:41.583Z INFO:httpx:HTTP Request: GET https://lenny.substack.com/api/v1/publication "HTTP/1.1 301 Moved Permanently"
+2026-07-14T15:44:41.631Z INFO:httpx:HTTP Request: GET https://www.lennysnewsletter.com/api/v1/publication "HTTP/1.1 403 Forbidden"
+2026-07-14T15:44:41.632Z INFO:src.fetcher:Publication API blocked for lenny.substack.com, falling back to RSS metadata
+2026-07-14T15:44:41.659Z INFO:httpx:HTTP Request: GET https://lenny.substack.com/feed "HTTP/1.1 301 Moved Permanently"
+2026-07-14T15:44:41.684Z INFO:httpx:HTTP Request: GET https://www.lennysnewsletter.com/feed "HTTP/1.1 200 OK"
+2026-07-14T15:44:41.708Z INFO:httpx:HTTP Request: GET https://lenny.substack.com/feed "HTTP/1.1 301 Moved Permanently"
+2026-07-14T15:44:41.735Z INFO:httpx:HTTP Request: GET https://www.lennysnewsletter.com/feed "HTTP/1.1 200 OK"
+2026-07-14T15:44:41.769Z INFO:httpx:HTTP Request: GET https://lenny.substack.com/api/v1/posts/how-i-ai-gpt-56-review-how-a-solo "HTTP/1.1 301 Moved Permanently"
+2026-07-14T15:44:41.860Z INFO:httpx:HTTP Request: GET https://www.lennysnewsletter.com/api/v1/posts/how-i-ai-gpt-56-review-how-a-solo "HTTP/1.1 200 OK"
+2026-07-14T15:44:41.900Z INFO:httpx:HTTP Request: GET https://lenny.substack.com/api/v1/author/1849774 "HTTP/1.1 301 Moved Permanently"
+2026-07-14T15:44:42.183Z INFO:httpx:HTTP Request: GET https://www.lennysnewsletter.com/api/v1/author/1849774 "HTTP/1.1 404 Not Found"
+2026-07-14T15:44:42.210Z INFO:httpx:HTTP Request: GET https://lenny.substack.com/api/v1/posts/this-solo-builder-runs-247-local "HTTP/1.1 301 Moved Permanently"
+2026-07-14T15:44:42.280Z INFO:httpx:HTTP Request: GET https://www.lennysnewsletter.com/api/v1/posts/this-solo-builder-runs-247-local "HTTP/1.1 200 OK"
+2026-07-14T15:44:42.307Z INFO:httpx:HTTP Request: GET https://lenny.substack.com/api/v1/author/5636738 "HTTP/1.1 301 Moved Permanently"
+2026-07-14T15:44:42.599Z INFO:httpx:HTTP Request: GET https://www.lennysnewsletter.com/api/v1/author/5636738 "HTTP/1.1 404 Not Found"
+2026-07-14T15:44:42.627Z INFO:httpx:HTTP Request: GET https://lenny.substack.com/api/v1/posts/how-tech-workers-actually-feel-about "HTTP/1.1 301 Moved Permanently"
+2026-07-14T15:44:42.700Z INFO:httpx:HTTP Request: GET https://www.lennysnewsletter.com/api/v1/posts/how-tech-workers-actually-feel-about "HTTP/1.1 200 OK"
+2026-07-14T15:44:42.723Z INFO:httpx:HTTP Request: GET https://lenny.substack.com/api/v1/author/1849774 "HTTP/1.1 301 Moved Permanently"
+2026-07-14T15:44:43.023Z INFO:httpx:HTTP Request: GET https://www.lennysnewsletter.com/api/v1/author/1849774 "HTTP/1.1 404 Not Found"
+2026-07-14T15:44:43.057Z INFO:httpx:HTTP Request: GET https://lenny.substack.com/api/v1/posts/community-wisdom-negative-network "HTTP/1.1 301 Moved Permanently"
+2026-07-14T15:44:43.123Z INFO:httpx:HTTP Request: GET https://www.lennysnewsletter.com/api/v1/posts/community-wisdom-negative-network "HTTP/1.1 200 OK"
+2026-07-14T15:44:43.152Z INFO:httpx:HTTP Request: GET https://lenny.substack.com/api/v1/author/3667529 "HTTP/1.1 301 Moved Permanently"
+2026-07-14T15:44:43.401Z INFO:httpx:HTTP Request: GET https://www.lennysnewsletter.com/api/v1/author/3667529 "HTTP/1.1 404 Not Found"
+2026-07-14T15:44:43.431Z INFO:httpx:HTTP Request: GET https://lenny.substack.com/api/v1/posts/gpt-56-sol-vs-claude-fable-why-openais "HTTP/1.1 301 Moved Permanently"
+2026-07-14T15:44:43.496Z INFO:httpx:HTTP Request: GET https://www.lennysnewsletter.com/api/v1/posts/gpt-56-sol-vs-claude-fable-why-openais "HTTP/1.1 200 OK"
+2026-07-14T15:44:43.520Z INFO:httpx:HTTP Request: GET https://lenny.substack.com/api/v1/author/5636738 "HTTP/1.1 301 Moved Permanently"
+2026-07-14T15:44:43.778Z INFO:httpx:HTTP Request: GET https://www.lennysnewsletter.com/api/v1/author/5636738 "HTTP/1.1 404 Not Found"
+2026-07-14T15:44:43.812Z INFO:httpx:HTTP Request: GET https://lenny.substack.com/api/v1/posts/adam-mosseri-ai-is-a-tailwind-for "HTTP/1.1 301 Moved Permanently"
+2026-07-14T15:44:43.872Z INFO:httpx:HTTP Request: GET https://www.lennysnewsletter.com/api/v1/posts/adam-mosseri-ai-is-a-tailwind-for "HTTP/1.1 200 OK"
+2026-07-14T15:44:43.901Z INFO:httpx:HTTP Request: GET https://lenny.substack.com/api/v1/author/1849774 "HTTP/1.1 301 Moved Permanently"
+2026-07-14T15:44:44.130Z INFO:httpx:HTTP Request: GET https://www.lennysnewsletter.com/api/v1/author/1849774 "HTTP/1.1 404 Not Found"
+2026-07-14T15:44:44.163Z INFO:httpx:HTTP Request: GET https://lenny.substack.com/api/v1/posts/what-a-harness-is-and-how-to-build "HTTP/1.1 301 Moved Permanently"
+2026-07-14T15:44:44.195Z INFO:httpx:HTTP Request: GET https://www.lennysnewsletter.com/api/v1/posts/what-a-harness-is-and-how-to-build "HTTP/1.1 429 Too Many Requests"
+2026-07-14T15:44:44.197Z WARNING:src.fetcher:Rate limited on https://lenny.substack.com/api/v1/posts/what-a-harness-is-and-how-to-build, retrying after 2s
+2026-07-14T15:44:46.216Z INFO:httpx:HTTP Request: GET https://lenny.substack.com/api/v1/posts/what-a-harness-is-and-how-to-build "HTTP/1.1 301 Moved Permanently"
+2026-07-14T15:44:46.241Z INFO:httpx:HTTP Request: GET https://www.lennysnewsletter.com/api/v1/posts/what-a-harness-is-and-how-to-build "HTTP/1.1 429 Too Many Requests"
+2026-07-14T15:44:46.242Z WARNING:src.fetcher:Rate limited on https://lenny.substack.com/api/v1/posts/what-a-harness-is-and-how-to-build, retrying after 2s
+2026-07-14T15:44:48.259Z INFO:httpx:HTTP Request: GET https://lenny.substack.com/api/v1/posts/what-a-harness-is-and-how-to-build "HTTP/1.1 301 Moved Permanently"
+2026-07-14T15:44:48.285Z INFO:httpx:HTTP Request: GET https://www.lennysnewsletter.com/api/v1/posts/what-a-harness-is-and-how-to-build "HTTP/1.1 429 Too Many Requests"
+2026-07-14T15:44:48.287Z WARNING:src.fetcher:Failed to fetch post what-a-harness-is-and-how-to-build for lenny.substack.com: Client error '429 Too Many Requests' for url 'https://www.lennysnewsletter.com/api/v1/posts/what-a-harness-is-and-how-to-build'
+2026-07-14T15:44:48.289Z For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/429
+2026-07-14T15:44:48.309Z INFO:httpx:HTTP Request: GET https://lenny.substack.com/api/v1/posts/how-tech-workers-are-feeling-in-2026 "HTTP/1.1 429 Too Many Requests"
+2026-07-14T15:44:48.310Z WARNING:src.fetcher:Rate limited on https://lenny.substack.com/api/v1/posts/how-tech-workers-are-feeling-in-2026, retrying after 2s
+2026-07-14T15:44:50.330Z INFO:httpx:HTTP Request: GET https://lenny.substack.com/api/v1/posts/how-tech-workers-are-feeling-in-2026 "HTTP/1.1 429 Too Many Requests"
+2026-07-14T15:44:50.332Z WARNING:src.fetcher:Rate limited on https://lenny.substack.com/api/v1/posts/how-tech-workers-are-feeling-in-2026, retrying after 2s
+2026-07-14T15:44:52.369Z INFO:httpx:HTTP Request: GET https://lenny.substack.com/api/v1/posts/how-tech-workers-are-feeling-in-2026 "HTTP/1.1 429 Too Many Requests"
+2026-07-14T15:44:52.370Z WARNING:src.fetcher:Failed to fetch post how-tech-workers-are-feeling-in-2026 for lenny.substack.com: Client error '429 Too Many Requests' for url 'https://lenny.substack.com/api/v1/posts/how-tech-workers-are-feeling-in-2026'
+2026-07-14T15:44:52.372Z For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/429
+2026-07-14T15:44:52.408Z INFO:httpx:HTTP Request: GET https://lenny.substack.com/api/v1/posts/how-i-ai-sonnet-5-review-and-how "HTTP/1.1 429 Too Many Requests"
+2026-07-14T15:44:52.410Z WARNING:src.fetcher:Rate limited on https://lenny.substack.com/api/v1/posts/how-i-ai-sonnet-5-review-and-how, retrying after 2s
+2026-07-14T15:44:54.439Z INFO:httpx:HTTP Request: GET https://lenny.substack.com/api/v1/posts/how-i-ai-sonnet-5-review-and-how "HTTP/1.1 429 Too Many Requests"
+2026-07-14T15:44:54.442Z WARNING:src.fetcher:Rate limited on https://lenny.substack.com/api/v1/posts/how-i-ai-sonnet-5-review-and-how, retrying after 2s
+2026-07-14T15:44:56.466Z INFO:httpx:HTTP Request: GET https://lenny.substack.com/api/v1/posts/how-i-ai-sonnet-5-review-and-how "HTTP/1.1 429 Too Many Requests"
+2026-07-14T15:44:56.468Z WARNING:src.fetcher:Failed to fetch post how-i-ai-sonnet-5-review-and-how for lenny.substack.com: Client error '429 Too Many Requests' for url 'https://lenny.substack.com/api/v1/posts/how-i-ai-sonnet-5-review-and-how'
+2026-07-14T15:44:56.469Z For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/429
+2026-07-14T15:44:56.491Z INFO:httpx:HTTP Request: GET https://lenny.substack.com/api/v1/posts/how-i-run-autonomous-coding-agents "HTTP/1.1 429 Too Many Requests"
+2026-07-14T15:44:56.493Z WARNING:src.fetcher:Rate limited on https://lenny.substack.com/api/v1/posts/how-i-run-autonomous-coding-agents, retrying after 2s
+2026-07-14T15:44:58.535Z INFO:httpx:HTTP Request: GET https://lenny.substack.com/api/v1/posts/how-i-run-autonomous-coding-agents "HTTP/1.1 429 Too Many Requests"
+2026-07-14T15:44:58.537Z WARNING:src.fetcher:Rate limited on https://lenny.substack.com/api/v1/posts/how-i-run-autonomous-coding-agents, retrying after 2s
+2026-07-14T15:45:00.582Z INFO:httpx:HTTP Request: GET https://lenny.substack.com/api/v1/posts/how-i-run-autonomous-coding-agents "HTTP/1.1 429 Too Many Requests"
+2026-07-14T15:45:00.583Z WARNING:src.fetcher:Failed to fetch post how-i-run-autonomous-coding-agents for lenny.substack.com: Client error '429 Too Many Requests' for url 'https://lenny.substack.com/api/v1/posts/how-i-run-autonomous-coding-agents'
+2026-07-14T15:45:00.585Z For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/429
+2026-07-14T15:45:00.587Z [apify] INFO  Fetched 6 profiles from lenny.substack.com
+2026-07-14T15:45:00.970Z [apify] WARN  Exported 8 writer(s), but 0 are billable (no public contact found).
+2026-07-14T15:45:00.971Z   Why: these authors don't publish a public email or social on Substack.
+2026-07-14T15:45:00.973Z   What to try next:
+2026-07-14T15:45:00.975Z     - Use broader keywords to discover more authors.
+2026-07-14T15:45:00.976Z     - Set 'includeContact' = false to receive the full list
+2026-07-14T15:45:00.978Z       (all qualified leads are then billed, contacts or not).
+2026-07-14T15:45:00.980Z [apify] INFO  === RUN SUMMARY ===  sources: 4 | writers: 8 | billable (contact-ready): 0
+2026-07-14T15:45:00.981Z [apify] INFO  Exiting Actor ({"exit_code": 0})
+

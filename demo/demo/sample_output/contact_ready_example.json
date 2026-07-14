@@ -1,0 +1,22 @@
+[
+  {
+    "platform": "substack",
+    "sourceId": "aireaders.substack.com",
+    "sourceName": "AI Readers",
+    "sourceUrl": "https://aireaders.substack.com",
+    "authorName": "Jordan Lee",
+    "authorBio": "Writing about applied AI and developer tooling.",
+    "authorAvatarUrl": "https://cdn.substack.com/...",
+    "publicEmail": "jordan@aireaders.com",
+    "hasEmail": true,
+    "twitter": "https://twitter.com/jordanlee",
+    "linkedin": null,
+    "website": "https://jordanlee.dev",
+    "socialLinks": "twitter:https://twitter.com/jordanlee,website:https://jordanlee.dev",
+    "audienceSize": 12400,
+    "relevanceScore": 0.95,
+    "audienceScore": 12400,
+    "qualified": true,
+    "contactReady": true
+  }
+]
