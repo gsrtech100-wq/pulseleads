@@ -1,4 +1,4 @@
-![AZ PulseLeads](demo/branding/az_pulseleads_light.png)
+![AZ PulseLeads](https://raw.githubusercontent.com/gsrtech100-wq/pulseleads/main/demo/branding/az_pulseleads_light.png)
 
 # AZ PulseLeads — Substack Outreach Lead Generator
 
