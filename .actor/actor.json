@@ -38,10 +38,12 @@
         "type": "object",
         "properties": {
           "platform": { "type": "string" },
+          "sourceId": { "type": "string" },
           "sourceName": { "type": ["string", "null"] },
           "sourceUrl": { "type": ["string", "null"] },
           "authorName": { "type": ["string", "null"] },
           "authorBio": { "type": ["string", "null"] },
+          "authorAvatarUrl": { "type": ["string", "null"] },
           "publicEmail": { "type": ["string", "null"] },
           "hasEmail": { "type": "boolean" },
           "twitter": { "type": ["string", "null"] },
@@ -50,6 +52,7 @@
           "socialLinks": { "type": "string" },
           "audienceSize": { "type": ["integer", "null"] },
           "relevanceScore": { "type": "number" },
+          "audienceScore": { "type": "number" },
           "qualified": { "type": "boolean" },
           "contactReady": { "type": "boolean" }
         }

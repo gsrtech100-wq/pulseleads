@@ -1,14 +1,17 @@
 # AZ PulseLeads — Release & Demo Notes
 
-## Release status (as of this package)
-- **Code:** 7/7 offline tests pass; Actor pushed & built (`0.1.2`).
+## Release status (verified 2026-07-16)
+- **Code:** 7/7 offline tests pass in a clean isolated venv; Actor pushed & built (`0.1.3`).
 - **Repo:** `github.com/gsrtech100-wq/pulseleads` (MIT, branded).
 - **Branding:** product renamed **AZ PulseLeads**; official AZ logo + product lockup applied
   across Apify, GitHub, README, release notes, changelog, architecture, and this demo package.
-- **Production run:** `tcgSwbc5txajohDPs` SUCCEEDED (2 leads from `lenny.substack.com`).
-- **Billing (open item):** enable pay-per-event in the Apify Console (Monetization) with
-  `LEAD_DISCOVERED` $0.00030, then re-run to capture `chargedEventCounts`. After that, the
-  product is fully ready for public release.
+- **Live verification run:** `jyOzEyQ7ZCpyMacxj` SUCCEEDED (build `0.1.2`→`0.1.3`), 4 leads from
+  `lenny.substack.com` (Lenny Rachitsky, Claire Vo, Kiyani, Noam Segal). Reproduces the original
+  release evidence exactly — the engine + live deployment both work end-to-end.
+- **Billing:** pay-per-event LIVE. `apify actors info` confirms `LEAD_DISCOVERED` $0.00030 armed;
+  `apify-actor-start` $0.00005 and result $0.0005 charged on every run.
+- **Schema fix (build 0.1.3):** `.actor/actor.json` dataset fields aligned to the real exported
+  schema (`sourceId`, `authorAvatarUrl`, `socialLinks`, `audienceScore` now declared).
 
 ## Demo readiness
 - `demo_script.md` — 3–5 min talking script.
